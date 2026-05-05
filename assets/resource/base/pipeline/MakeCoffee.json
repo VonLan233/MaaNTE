@@ -23,7 +23,7 @@
         ]
     },
     "MakeCoffeeOneOneEnter": {
-        "desc": "等待店长特供入口并点击进入",
+        "desc": "等待店长特供入口并按 F 进入",
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -38,7 +38,12 @@
             }
         },
         "action": {
-            "type": "Click"
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    70
+                ]
+            }
         },
         "post_delay": 1000,
         "next": [
