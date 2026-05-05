@@ -14,10 +14,10 @@
             "type": "switch",
             "label": "做咖啡模式",
             "description": "选择做咖啡的方式：敲人模式保留旧版 CustomAction，刷 1-1 模式改为 MaaFW pipeline 状态监测",
-            "default_case": "敲人模式",
+            "default_case": "Yes",
             "cases": [
                 {
-                    "name": "敲人模式",
+                    "name": "Yes",
                     "label": "敲人/驱赶顾客",
                     "pipeline_override": {
                         "AutoMakeCoffee": {
@@ -28,7 +28,7 @@
                     }
                 },
                 {
-                    "name": "刷1-1模式",
+                    "name": "No",
                     "label": "刷 1-1（MaaFW 状态监测）",
                     "pipeline_override": {
                         "AutoMakeCoffee": {
