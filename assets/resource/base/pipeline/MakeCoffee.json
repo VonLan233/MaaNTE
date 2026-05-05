@@ -23,20 +23,7 @@
         ]
     },
     "MakeCoffeeOneOneEnter": {
-        "desc": "等待店长特供入口并按 F 进入",
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    240,
-                    80
-                ],
-                "template": "auto_make_coffee/enter.png",
-                "threshold": 0.8
-            }
-        },
+        "desc": "按 F 进入",
         "action": {
             "type": "ClickKey",
             "param": {
