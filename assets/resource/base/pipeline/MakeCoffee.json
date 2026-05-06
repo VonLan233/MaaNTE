@@ -142,7 +142,20 @@
         ]
     },
     "MakeCoffeeOneOneFood1Click1": {
-        "desc": "菜品 1 第一次点击：直接点击",
+        "desc": "菜品 1 第一次点击",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param":{
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    720
+                ],
+                "template": "auto_make_coffee/food_1.png",
+                "threshold": 0.6
+            }
+        },
         "action": {
             "type": "LongPress",
             "param": {
@@ -169,10 +182,10 @@
                     141
                 ],
                 "template": "auto_make_coffee/food_1_ready_2.png",
-                "threshold": 0.6
+                "threshold": 0.8
             }
         },
-        "post_delay": 100,
+        "post_delay": 50,
         "next": [
             "MakeCoffeeOneOneFood1Click2"
         ]
@@ -207,10 +220,10 @@
                     150
                 ],
                 "template": "auto_make_coffee/food_1_ready_3.png",
-                "threshold": 0.6
+                "threshold": 0.8
             }
         },
-        "post_delay": 100,
+        "post_delay": 50,
         "next": [
             "MakeCoffeeOneOneFood1Click3"
         ]
@@ -245,16 +258,29 @@
                     150
                 ],
                 "template": "auto_make_coffee/food_1_empty_after_3.png",
-                "threshold": 0.6
+                "threshold": 0.8
             }
         },
-        "post_delay": 100,
+        "post_delay": 50,
         "next": [
             "MakeCoffeeOneOneFood2Click1"
         ]
     },
     "MakeCoffeeOneOneFood2Click1": {
         "desc": "菜品 2 第一次点击：直接点击",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param":{
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    720
+                ],
+                "template": "auto_make_coffee/food_2.png",
+                "threshold": 0.6
+            }
+        },
         "action": {
             "type": "LongPress",
             "param": {
@@ -284,7 +310,7 @@
                 "threshold": 0.8
             }
         },
-        "post_delay": 100,
+        "post_delay": 50,
         "next": [
             "MakeCoffeeOneOneFood2Click2"
         ]
@@ -322,7 +348,7 @@
                 "threshold": 0.8
             }
         },
-        "post_delay": 100,
+        "post_delay": 50,
         "next": [
             "MakeCoffeeOneOneFood2Click3"
         ]
@@ -357,16 +383,29 @@
                     155
                 ],
                 "template": "auto_make_coffee/food_2_empty_after_3.png",
-                "threshold": 0.6
+                "threshold": 0.8
             }
         },
-        "post_delay": 100,
+        "post_delay": 50,
         "next": [
             "MakeCoffeeOneOneFood3Click1"
         ]
     },
     "MakeCoffeeOneOneFood3Click1": {
-        "desc": "菜品 3 第一次点击：直接点击",
+        "desc": "菜品 3 第一次点击",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    720
+                ],
+                "template": "auto_make_coffee/food_3.png",
+                "threshold": 0.6
+            }
+        },
         "action": {
             "type": "LongPress",
             "param": {
@@ -393,16 +432,29 @@
                     125
                 ],
                 "template": "auto_make_coffee/food_3_ready_2.png",
-                "threshold": 0.6
+                "threshold": 0.8
             }
         },
-        "post_delay": 100,
+        "post_delay": 50,
         "next": [
             "MakeCoffeeOneOneFood3Click2"
         ]
     },
     "MakeCoffeeOneOneFood3Click2": {
         "desc": "菜品 3 第二次点击",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param":{
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    720
+                ],
+                "template": "auto_make_coffee/food_3.png",
+                "threshold": 0.8
+            }
+        },
         "action": {
             "type": "LongPress",
             "param": {
@@ -431,10 +483,10 @@
                     155
                 ],
                 "template": "auto_make_coffee/food_3_ready_3.png",
-                "threshold": 0.6
+                "threshold": 0.8
             }
         },
-        "post_delay": 100,
+        "post_delay": 50,
         "next": [
             "MakeCoffeeOneOneFood3Click3"
         ]
@@ -469,10 +521,10 @@
                     155
                 ],
                 "template": "auto_make_coffee/food_3_empty_after_3.png",
-                "threshold": 0.6
+                "threshold": 0.8
             }
         },
-        "post_delay": 100,
+        "post_delay": 50,
         "next": [
             "MakeCoffeeOneOneExitBusiness"
         ]
