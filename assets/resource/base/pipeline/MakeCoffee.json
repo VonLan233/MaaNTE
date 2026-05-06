@@ -185,7 +185,7 @@
                 "threshold": 0.8
             }
         },
-        "post_delay": 50,
+        "post_delay":10,
         "next": [
             "MakeCoffeeOneOneFood1Click2"
         ]
@@ -223,7 +223,7 @@
                 "threshold": 0.8
             }
         },
-        "post_delay": 50,
+        "post_delay":10,
         "next": [
             "MakeCoffeeOneOneFood1Click3"
         ]
@@ -261,7 +261,7 @@
                 "threshold": 0.8
             }
         },
-        "post_delay": 50,
+        "post_delay":10,
         "next": [
             "MakeCoffeeOneOneFood2Click1"
         ]
@@ -310,7 +310,7 @@
                 "threshold": 0.8
             }
         },
-        "post_delay": 50,
+        "post_delay":10,
         "next": [
             "MakeCoffeeOneOneFood2Click2"
         ]
@@ -348,7 +348,7 @@
                 "threshold": 0.8
             }
         },
-        "post_delay": 50,
+        "post_delay":10,
         "next": [
             "MakeCoffeeOneOneFood2Click3"
         ]
@@ -386,7 +386,7 @@
                 "threshold": 0.8
             }
         },
-        "post_delay": 50,
+        "post_delay":10,
         "next": [
             "MakeCoffeeOneOneFood3Click1"
         ]
@@ -435,7 +435,7 @@
                 "threshold": 0.8
             }
         },
-        "post_delay": 50,
+        "post_delay":10,
         "next": [
             "MakeCoffeeOneOneFood3Click2"
         ]
@@ -486,7 +486,7 @@
                 "threshold": 0.8
             }
         },
-        "post_delay": 50,
+        "post_delay":10,
         "next": [
             "MakeCoffeeOneOneFood3Click3"
         ]
@@ -524,7 +524,7 @@
                 "threshold": 0.8
             }
         },
-        "post_delay": 50,
+        "post_delay":10,
         "next": [
             "MakeCoffeeOneOneExitBusiness"
         ]
