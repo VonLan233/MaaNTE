@@ -185,7 +185,10 @@ class RoiMarker:
         output_json = self.image_path.with_name(f"{self.image_path.stem}_roi.json")
         output_image = self.image_path.with_name(f"{self.image_path.stem}_roi.png")
 
-        data = {str(item["label"]): item["roi"] for item in self.rois}
+        data = [
+            {"label": str(item["label"]), "roi": item["roi"]}
+            for item in self.rois
+        ]
         output_json.write_text(json.dumps(data, ensure_ascii=False, indent=4) + "\n")
         cv2.imwrite(str(output_image), self._render())
 
@@ -195,12 +198,12 @@ class RoiMarker:
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="在截图上拖拽标注 MaaFW ROI。")
+    parser = argparse.ArgumentParser(
+        description="在截图上拖拽标注 MaaFW ROI。请传入要标注的截图路径，例如：samples/main.jpg。"
+    )
     parser.add_argument(
         "image",
-        nargs="?",
-        default="/Users/lanyichen/Codes/main.jpg",
-        help="要标注的截图路径，默认使用 /Users/lanyichen/Codes/main.jpg",
+        help="要标注的截图路径（必填），例如：samples/main.jpg。",
     )
     parser.add_argument(
         "--scale",
@@ -219,7 +222,11 @@ def parse_args():
 
 def main():
     args = parse_args()
-    marker = RoiMarker(Path(args.image), args.labels, args.scale)
+    image_path = Path(args.image)
+    if not image_path.is_file():
+        raise SystemExit(f"错误：图片文件不存在或不可读取：{image_path}")
+
+    marker = RoiMarker(image_path, args.labels, args.scale)
     print("操作说明：拖拽鼠标左键画框，松开后输出 [x, y, w, h]。")
     print("按 s 保存 JSON/标注图，按 q 或 Esc 退出。")
     print(f"当前标签: {marker.current_label}")

@@ -51,19 +51,33 @@ class AutoMakeCoffee(CustomAction):
             except (json.JSONDecodeError, TypeError, ValueError) as exc:
                 print(f"[coffee] 参数解析失败，使用默认参数: {exc}")
 
-        if self.start_template is None or self.star_template is None or self.claim_template is None:
-            print("[coffee] 缺少旧版敲人模式必要模板，任务退出")
-            return CustomAction.RunResult(success=False)
-
-        return self._run_evict(context, context.tasker.controller, make_count, check_freq)
-
-    def _run_evict(self, context: Context, controller, make_count: int, check_freq: float):
         start_template = self.start_template
         star_template = self.star_template
         claim_template = self.claim_template
         if start_template is None or star_template is None or claim_template is None:
             print("[coffee] 缺少旧版敲人模式必要模板，任务退出")
             return CustomAction.RunResult(success=False)
+
+        return self._run_evict(
+            context,
+            context.tasker.controller,
+            make_count,
+            check_freq,
+            start_template,
+            star_template,
+            claim_template,
+        )
+
+    def _run_evict(
+        self,
+        context: Context,
+        controller,
+        make_count: int,
+        check_freq: float,
+        start_template,
+        star_template,
+        claim_template,
+    ):
 
         key_f = 70
 
