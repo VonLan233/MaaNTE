@@ -452,7 +452,7 @@
                     720
                 ],
                 "template": "auto_make_coffee/food_3.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "action": {
