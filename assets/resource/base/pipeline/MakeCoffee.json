@@ -40,7 +40,7 @@
                     720
                 ],
                 "template": "auto_make_coffee/enter.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "action": {
@@ -83,7 +83,7 @@
                     720
                 ],
                 "template": "auto_make_coffee/level_chose.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "action": {
@@ -109,7 +109,7 @@
                     120
                 ],
                 "template": "auto_make_coffee/start.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "action": {
@@ -134,7 +134,7 @@
                     90
                 ],
                 "template": "auto_make_coffee/timer.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "next": [
@@ -182,7 +182,7 @@
                     141
                 ],
                 "template": "auto_make_coffee/food_1_ready_2.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "post_delay":10,
@@ -220,7 +220,7 @@
                     150
                 ],
                 "template": "auto_make_coffee/food_1_ready_3.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "post_delay":10,
@@ -258,7 +258,7 @@
                     150
                 ],
                 "template": "auto_make_coffee/food_1_empty_after_3.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "post_delay":10,
@@ -307,7 +307,7 @@
                     145
                 ],
                 "template": "auto_make_coffee/food_2_ready_2.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "post_delay":10,
@@ -345,7 +345,7 @@
                     155
                 ],
                 "template": "auto_make_coffee/food_2_ready_3.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "post_delay":10,
@@ -383,7 +383,7 @@
                     155
                 ],
                 "template": "auto_make_coffee/food_2_empty_after_3.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "post_delay":10,
@@ -432,7 +432,7 @@
                     125
                 ],
                 "template": "auto_make_coffee/food_3_ready_2.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "post_delay":10,
@@ -483,7 +483,7 @@
                     155
                 ],
                 "template": "auto_make_coffee/food_3_ready_3.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "post_delay":10,
@@ -521,7 +521,7 @@
                     155
                 ],
                 "template": "auto_make_coffee/food_3_empty_after_3.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "post_delay":10,
@@ -541,7 +541,7 @@
                     64
                 ],
                 "template": "auto_make_coffee/exit.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "action": {
@@ -567,7 +567,7 @@
                     38
                 ],
                 "template": "auto_make_coffee/claim.png",
-                "threshold": 0.8
+                "threshold": 0.7
             }
         },
         "action": {
